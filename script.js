@@ -24,14 +24,14 @@ const galleryData = [
     {
         id: 4,
         title: "Nature in the purest form ",
-        category: "portrait",
+        category: "Portrait",
         description: "Vibrant colors of the setting brid.",
         image: "https://raw.githubusercontent.com/sivadevireddy89-afk/Kirsty_Murdock/main/Images/WhatsApp%20Image%202026-03-27%20at%2020.32.44.jpeg"
     },
     {
         id: 5,
         title: "Historic Town Square",
-        category: "location",
+        category: "Portrait",
         description: "Charming European town square with centuries of history.",
         image: "https://raw.githubusercontent.com/sivadevireddy89-afk/Kirsty_Murdock/main/Images/637720430_18562891804015683_5133635540386644117_n.jpg"
     },
