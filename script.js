@@ -52,7 +52,7 @@ const galleryData = [
     {
         id: 8,
         title: "Venice Canals",
-        category: "location",
+        category: "Birds",
         description: "Romantic waterways of the floating city.",
         image: "https://raw.githubusercontent.com/sivadevireddy89-afk/Kirsty_Murdock/main/Images/WhatsApp%20Image%202026-03-27%20at%2020.32.44%20(1).jpeg"
     },
@@ -66,7 +66,7 @@ const galleryData = [
     {
         id: 10,
         title: "Desert Landscape",
-        category: "scenery",
+        category: "Portrait",
         description: "The stark beauty of endless sand dunes.",
         image: "https://raw.githubusercontent.com/sivadevireddy89-afk/Kirsty_Murdock/main/Images/632469366_18562891948015683_944061363553294226_n.jpg"
     },
