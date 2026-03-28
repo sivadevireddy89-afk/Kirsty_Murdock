@@ -33,14 +33,14 @@ const galleryData = [
         title: "Historic Town Square",
         category: "location",
         description: "Charming European town square with centuries of history.",
-        image: "https://raw.githubusercontent.com/sivadevireddy89-afk/rightdistractions.github.io/main/Images/WhatsApp%20Image%202026-03-24%20at%2011.22.43%20(3).jpeg"
+        image: "https://raw.githubusercontent.com/sivadevireddy89-afk/Kirsty_Murdock/main/Images/637720430_18562891804015683_5133635540386644117_n.jpg"
     },
     {
         id: 6,
         title: "Young Artist",
         category: "portrait",
         description: "Capturing the creative spirit and dreams of sky.",
-        image: "https://raw.githubusercontent.com/sivadevireddy89-afk/rightdistractions.github.io/main/Images/WhatsApp%20Image%202026-03-24%20at%2011.22.43%20(4).jpeg"
+        image: "https://raw.githubusercontent.com/sivadevireddy89-afk/Kirsty_Murdock/main/Images/627483750_18333481078246897_4892216339291354652_n.jpg"
     },
     {
         id: 7,
