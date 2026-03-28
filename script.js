@@ -38,7 +38,7 @@ const galleryData = [
     {
         id: 6,
         title: "Young Artist",
-        category: "portrait",
+        category: "Animals",
         description: "Capturing the creative spirit and dreams of sky.",
         image: "https://raw.githubusercontent.com/sivadevireddy89-afk/Kirsty_Murdock/main/Images/627483750_18333481078246897_4892216339291354652_n.jpg"
     },
