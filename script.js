@@ -5,7 +5,7 @@ const galleryData = [
         title: "Majestic Elephant",
         category: "Animals",
         description: "A majestic elephant exploring the forest.",
-        image: "https://raw.githubusercontent.com/sivadevireddy89-afk/Kirsty_Murdock/main/Images/240946140_646628262971697_4122034282149787550_n.jpeg"
+        image: "https://raw.githubusercontent.com/sivadevireddy89-afk/Kirsty_Murdock/main/Images/240946140_646628262971697_4122034282149787550_n.jpg"
     },
     {
         id: 2,
