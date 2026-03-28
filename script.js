@@ -9,17 +9,17 @@ const galleryData = [
     },
     {
         id: 2,
-        title: "City Skyline", 
+        title: "Face in Black & White", 
         category: "Portrait",
-        description: "London - Tower Bridge capturing the essence of modern city life.",
-        image: "https://raw.githubusercontent.com/sivadevireddy89-afk/rightdistractions.github.io/main/Images/WhatsApp%20Image%202026-03-24%20at%2011.22.43%20(1).jpeg"
+        description: "Capture the essence of a person.",
+        image: "https://raw.githubusercontent.com/sivadevireddy89-afk/Kirsty_Murdock/main/Images/626803657_18558519499015683_6066650572566796078_n.jpg"
     },
     {
         id: 3,
-        title: "Clock Tower",
-        category: "portrait", 
-        description: "Time captured in a wonderful evening.",
-        image: "https://raw.githubusercontent.com/sivadevireddy89-afk/rightdistractions.github.io/main/Images/WhatsApp%20Image%202026-03-24%20at%2011.22.43%20(2).jpeg"
+        title: "Owl",
+        category: "Birds", 
+        description: "Owl flying along with the wind.",
+        image: "https://raw.githubusercontent.com/sivadevireddy89-afk/Kirsty_Murdock/main/Images/WhatsApp%20Image%202026-03-27%20at%2020.32.44%20(2).jpeg"
     },
     {
         id: 4,
