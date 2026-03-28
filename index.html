@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- SEO Meta Tags -->
+    <meta name="description" content="Right Distractions - Fine art paintings capturing sceneries, locations, and portraits. Commission custom artwork or browse our gallery of original paintings.">
+    <meta name="keywords" content="fine art paintings, custom portraits, landscape paintings, commissioned artwork, artist portfolio, original paintings">
+    <meta name="author" content="Right Distractions">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://rightdistractions.com">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://rightdistractions.com">
+    <meta property="og:title" content="Right Distractions — Fine Art Paintings">
+    <meta property="og:description" content="Fine art paintings capturing sceneries, locations, and portraits. Commission custom artwork or browse our gallery.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1513364776144-60967b0f800f?w=1200&h=630&fit=crop">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://rightdistractions.com">
+    <meta property="twitter:title" content="Right Distractions — Fine Art Paintings">
+    <meta property="twitter:description" content="Fine art paintings capturing sceneries, locations, and portraits. Commission custom artwork or browse our gallery.">
+    <meta property="twitter:image" content="https://images.unsplash.com/photo-1513364776144-60967b0f800f?w=1200&h=630&fit=crop">
+    
+     <meta name="referrer" content="strict-origin-when-cross-origin">
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta http-equiv="X-Frame-Options" content="SAMEORIGIN">
+    <meta http-equiv="X-XSS-Protection" content="1; mode=block">
+
+    <!-- Performance: Preconnect to external domains -->
+    <link rel="preconnect" href="https://images.unsplash.com">
+    <link rel="preconnect" href="https://lottie.host">
+    <link rel="preconnect" href="https://raw.githubusercontent.com">
+    <link rel="dns-prefetch" href="https://images.unsplash.com">
+    
+    <!-- Performance: Preload critical resources -->
+    <link rel="preload" href="styles.css" as="style">
+    
+    <title>Right Distractions — Fine Art Paintings</title>
+    <link rel="stylesheet" href="styles.css">
+
+     <!-- Performance: Async script loading -->
+    <script src="script.js" defer></script>
+
+    <!-- Service Worker Registration for caching -->
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/sw.js')
+                    .then((registration) => {
+                        console.log('SW registered: ', registration);
+                    })
+                    .catch((error) => {
+                        console.log('SW registration failed: ', error);
+                    });
+            });
+        }
+    </script>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-brand">
+                <h1>Right Distractions</h1>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#gallery" class="nav-link">Gallery</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1 class="hero-title">Fine Art Paintings</h1>
+                <p class="hero-subtitle">Capturing the beauty of sceneries, locations, and portraits through artistic expression</p>
+                <a href="#gallery" class="cta-button">View Gallery</a>
+            </div>
+        </section>
+
+        <section id="gallery" class="gallery-section">
+            <div class="container">
+                <h2 class="section-title">Gallery</h2>
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-filter="all">All Works</button>
+                    <button class="filter-btn" data-filter="scenery">Sceneries</button>
+                    <button class="filter-btn" data-filter="location">Locations</button>
+                    <button class="filter-btn" data-filter="portrait">Portraits</button>
+                </div>
+                <div class="gallery-grid">
+                    <!-- Gallery items will be dynamically generated -->
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about-section">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2 class="section-title">About the Artist</h2>
+                    <p>Welcome to my artistic journey. Through my paintings, I strive to capture the essence of the world around us - from breathtaking landscapes and iconic locations to the intimate stories told through portraits.</p>
+                    <p>Each piece is a labor of love, created with traditional techniques and a modern perspective. My work explores the interplay of light, color, and emotion to create pieces that resonate with viewers on a personal level.</p>
+                    <div class="artist-stats">
+                        <div class="stat">
+                            <span class="stat-number">50+</span>
+                            <span class="stat-label">Paintings</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">10+</span>
+                            <span class="stat-label">Exhibitions</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">5+</span>
+                            <span class="stat-label">Years Experience</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                   <iframe src="https://lottie.host/embed/7b838483-d975-4e73-9302-a7356e19cbc4/KSZSr32Bhe.lottie" width="100%" height="100%" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </section>
+        <section id="testimonials" class="testimonials-section">
+            <div class="container">
+                <h2 class="section-title">Client Testimonials</h2>
+                <p class="section-subtitle">What clients have to say about my work</p>
+                <div class="testimonials-grid">
+                    <div class="testimonial-card">
+                        <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+                        <p class="testimonial-text">"The artist captured the essence of our family perfectly. The painting now hangs proudly in our living room. Absolutely stunning work!"</p>
+                        <p class="testimonial-author">— Sarah Johnson</p>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+                        <p class="testimonial-text">"I commissioned a landscape painting and was blown away by the attention to detail and use of color. This is true artistry at its finest."</p>
+                        <p class="testimonial-author">— Michael Chen</p>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+                        <p class="testimonial-text">"The portrait painting transformed my office. Every time clients visit, they comment on how beautiful it is. Highly professional and talented!"</p>
+                        <p class="testimonial-author">— Emma Williams</p>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+                        <p class="testimonial-text">"Working with this artist was a dream. The communication was excellent, the process was smooth, and the final result exceeded all expectations."</p>
+                        <p class="testimonial-author">— David Anderson</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contact" class="contact-section">
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Get in Touch</h3>
+                    <p>Interested in purchasing artwork or commissioning a piece? I'd love to hear from you.</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <strong>Email:</strong> artist@portfolio.com
+                        </div>
+                        <div class="contact-item">
+                            <strong>Phone:</strong> +1 (555) 123-4567
+                        </div>
+                        <div class="contact-item">
+                            <strong>Studio:</strong> Available by appointment
+                        </div>
+                    </div>
+                </div>
+                <div class="whatsapp-container">
+                    <div class="whatsapp-card">
+                        <div class="whatsapp-icon">
+                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M17.6 6.32A7.85 7.85 0 0 0 12 4a7.94 7.94 0 0 0-6.88 12.1L4 20l4.05-1.06A7.93 7.93 0 0 0 20 12a7.85 7.85 0 0 0-2.4-5.68zM12 18a5.92 5.92 0 0 1-3.2-.94l-.23-.14-2.4.63.64-2.35-.15-.24A5.93 5.93 0 0 1 6 12a6 6 0 0 1 12 0 5.93 5.93 0 0 1-6 6zm3.4-4.6c-.18-.1-1.07-.53-1.24-.59-.16-.06-.28-.1-.4.1-.12.18-.46.59-.56.7-.1.13-.2.14-.38.05-1.15-.58-1.9-1.03-2.66-2.33-.2-.34-.03-.52.15-.7.15-.15.34-.38.46-.57.1-.2.05-.36-.02-.5-.07-.14-.4-1.07-.55-1.46-.14-.37-.29-.32-.4-.33-.1 0-.22-.02-.34-.02s-.3.04-.46.22c-.16.18-.6.59-.6 1.43 0 .85.6 1.66.68 1.78.09.12 1.2 1.83 2.9 2.57 1.7.73 1.7.49 2 .46.3-.03 1.07-.43 1.22-.85.15-.42.15-.78.1-.85z" fill="currentColor"/>
+                            </svg>
+                        </div>
+                        <h3>Chat on WhatsApp</h3>
+                        <p>Get instant replies to your questions about commissions, prints, or artwork!</p>
+                        <a href="https://wa.me/917411990920?text=Hi!%20I'm%20interested%20in%20your%20artwork.%20Can%20we%20chat?" target="_blank" class="whatsapp-btn">
+                            <span>💬 Message Me</span>
+                        </a>
+                        <div class="whatsapp-status">
+                            <span class="status-dot"></span>
+                            <span>Usually replies within an hour</span>
+                        </div>
+                    </div>
+                </div>
+             </div>
+        </section>
+
+        <section id="instagram" class="instagram-section">
+            <div class="container">
+                <div class="instagram-content">
+                    <div class="instagram-info">
+                        <h2 class="section-title">Follow on Instagram</h2>
+                        <p>Discover more of my artwork and behind-the-scenes content on Instagram. Follow @rightdistractions for daily inspiration and updates on new paintings.</p>
+                        <a href="https://www.instagram.com/rightdistractions/" target="_blank" class="instagram-button">
+                            <span class="instagram-icon">📷</span>
+                            Follow @rightdistractions
+                        </a>
+                    </div>
+                    <div class="instagram-preview">
+                        <div class="instagram-grid">
+                            <div class="instagram-item">
+                                <div class="instagram-placeholder">
+                                    <span>Latest Artwork</span>
+                                </div>
+                            </div>
+                            <div class="instagram-item">
+                                <div class="instagram-placeholder">
+                                    <span>Behind the Scenes</span>
+                                </div>
+                            </div>
+                            <div class="instagram-item">
+                                <div class="instagram-placeholder">
+                                    <span>Work in Progress</span>
+                                </div>
+                            </div>
+                            <div class="instagram-item">
+                                <div class="instagram-placeholder">
+                                    <span>Studio Life</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+     <!-- Visual Journey - Animated Slider -->
+    <section id="visual-journey" class="visual-journey-slider">
+        <div class="slider-header">
+            <h2 class="slider-section-title">Visual Journey</h2>
+            <p class="slider-section-subtitle">Explore moments captured in art</p>
+        </div>
+        <div class="animated-slider">
+            <div class="slider-container">
+                <div class="slide active">
+                    <img src="https://images.unsplash.com/photo-1513364776144-60967b0f800f?w=1200&h=800&fit=crop" alt="Colorful Expressions">
+                    <div class="slide-content">
+                        <h3 class="slide-title">Colorful Expressions</h3>
+                        <p class="slide-subtitle">Vibrant paint tubes and artistic tools</p>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="https://images.unsplash.com/photo-1460661419201-fd4cecdf8a8b?w=1200&h=800&fit=crop" alt="Creative Process">
+                    <div class="slide-content">
+                        <h3 class="slide-title">Creative Process</h3>
+                        <p class="slide-subtitle">Where inspiration meets canvas</p>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="https://images.unsplash.com/photo-1578301978693-85fa9c0320b9?w=1200&h=800&fit=crop" alt="Artistic Tools">
+                    <div class="slide-content">
+                        <h3 class="slide-title">Artistic Tools</h3>
+                        <p class="slide-subtitle">The essentials of every painter</p>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="https://images.unsplash.com/photo-1536924940846-227afb31e2a5?w=1200&h=800&fit=crop" alt="Oil Paint Magic">
+                    <div class="slide-content">
+                        <h3 class="slide-title">Oil Paint Magic</h3>
+                        <p class="slide-subtitle">Rich colors and textures</p>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="https://images.unsplash.com/photo-1541963463532-d68292c34b19?w=1200&h=800&fit=crop" alt="Watercolor Dreams">
+                    <div class="slide-content">
+                        <h3 class="slide-title">Watercolor Dreams</h3>
+                        <p class="slide-subtitle">Fluid and ethereal beauty</p>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="https://raw.githubusercontent.com/sivadevireddy89-afk/rightdistractions.github.io/main/Images/steve-johnson-Xx_d26R37E4-unsplash.jpeg" alt="Brush Collection">
+                    <div class="slide-content">
+                        <h3 class="slide-title">Brush Collection</h3>
+                        <p class="slide-subtitle">Tools of the trade</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="slider-controls">
+                <button class="slider-arrow slider-prev" aria-label="Previous slide">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M15 18l-6-6 6-6"/>
+                    </svg>
+                </button>
+                <button class="slider-arrow slider-next" aria-label="Next slide">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M9 18l6-6-6-6"/>
+                    </svg>
+                </button>
+            </div>
+            
+            <div class="slider-dots">
+                <button class="dot active" data-slide="0" aria-label="Go to slide 1"></button>
+                <button class="dot" data-slide="1" aria-label="Go to slide 2"></button>
+                <button class="dot" data-slide="2" aria-label="Go to slide 3"></button>
+                <button class="dot" data-slide="3" aria-label="Go to slide 4"></button>
+                <button class="dot" data-slide="4" aria-label="Go to slide 5"></button>
+                <button class="dot" data-slide="5" aria-label="Go to slide 6"></button>
+            </div>
+            
+            <div class="slider-progress">
+                <div class="progress-fill"></div>
+            </div>
+        </div>
+    </section>
+    
+    <footer class="footer">
+        <p>&copy; 2026 Right Distractions. All rights reserved.</p>
+    </footer>
+
+    <!-- Modal for image viewing -->
+    <div class="modal" id="imageModal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="modal-image" id="modalImage"></div>
+            <div class="modal-info">
+                <h3 id="modalTitle"></h3>
+                <p id="modalDescription"></p>
+            </div>
+        </div>
+    </div>
+ <!-- Scrolling Paint Brush -->
+    <div class="scroll-brush" id="scrollBrush">
+        <svg viewBox="0 0 120 200" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+                <!-- Wood handle gradient -->
+                <linearGradient id="woodGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                    <stop offset="0%" style="stop-color:#5D3A1A;stop-opacity:1" />
+                    <stop offset="30%" style="stop-color:#8B4513;stop-opacity:1" />
+                    <stop offset="50%" style="stop-color:#A0522D;stop-opacity:1" />
+                    <stop offset="70%" style="stop-color:#8B4513;stop-opacity:1" />
+                    <stop offset="100%" style="stop-color:#5D3A1A;stop-opacity:1" />
+                </linearGradient>
+                <!-- Metal ferrule gradient -->
+                <linearGradient id="metalGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                    <stop offset="0%" style="stop-color:#B8860B;stop-opacity:1" />
+                    <stop offset="20%" style="stop-color:#FFD700;stop-opacity:1" />
+                    <stop offset="50%" style="stop-color:#FFF8DC;stop-opacity:1" />
+                    <stop offset="80%" style="stop-color:#FFD700;stop-opacity:1" />
+                    <stop offset="100%" style="stop-color:#B8860B;stop-opacity:1" />
+                </linearGradient>
+                <!-- Bristle gradient -->
+                <linearGradient id="bristleGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                    <stop offset="0%" style="stop-color:#D2B48C;stop-opacity:1" />
+                    <stop offset="50%" style="stop-color:#F5DEB3;stop-opacity:1" />
+                    <stop offset="100%" style="stop-color:#D2B48C;stop-opacity:1" />
+                </linearGradient>
+                <!-- Shadow filter -->
+                <filter id="dropShadow" x="-20%" y="-20%" width="140%" height="140%">
+                    <feGaussianBlur in="SourceAlpha" stdDeviation="3"/>
+                    <feOffset dx="3" dy="3" result="offsetblur"/>
+                    <feComponentTransfer>
+                        <feFuncA type="linear" slope="0.3"/>
+                    </feComponentTransfer>
+                    <feMerge> 
+                        <feMergeNode/>
+                        <feMergeNode in="SourceGraphic"/> 
+                    </feMerge>
+                </filter>
+            </defs>
+            
+            <!-- Brush handle -->
+            <rect x="45" y="10" width="30" height="100" rx="8" ry="8" fill="url(#woodGradient)" filter="url(#dropShadow)"/>
+            
+            <!-- Handle highlight -->
+            <rect x="50" y="15" width="8" height="90" rx="3" fill="#CD853F" opacity="0.5"/>
+            
+            <!-- Metal ferrule -->
+            <rect x="40" y="105" width="40" height="25" rx="3" ry="3" fill="url(#metalGradient)" filter="url(#dropShadow)"/>
+            
+            <!-- Ferrule ridges -->
+            <line x1="45" y1="108" x2="45" y2="127" stroke="#B8860B" stroke-width="1"/>
+            <line x1="50" y1="108" x2="50" y2="127" stroke="#B8860B" stroke-width="1"/>
+            <line x1="55" y1="108" x2="55" y2="127" stroke="#B8860B" stroke-width="1"/>
+            <line x1="60" y1="108" x2="60" y2="127" stroke="#B8860B" stroke-width="1"/>
+            <line x1="65" y1="108" x2="65" y2="127" stroke="#B8860B" stroke-width="1"/>
+            <line x1="70" y1="108" x2="70" y2="127" stroke="#B8860B" stroke-width="1"/>
+            <line x1="75" y1="108" x2="75" y2="127" stroke="#B8860B" stroke-width="1"/>
+            
+            <!-- Brush bristles with realistic curve -->
+            <path class="brush-tip" d="M42 128 Q38 155 45 175 Q55 190 60 185 Q70 175 78 175 Q85 155 78 128 Z" fill="url(#bristleGradient)" stroke="#C19A6B" stroke-width="1"/>
+            
+            <!-- Individual bristle lines -->
+            <g opacity="0.3" stroke="#8B7355" stroke-width="0.5">
+                <path d="M45 130 Q42 155 48 180"/>
+                <path d="M50 130 Q48 155 53 182"/>
+                <path d="M55 130 Q54 155 58 183"/>
+                <path d="M60 130 Q60 155 63 184"/>
+                <path d="M65 130 Q66 155 68 182"/>
+                <path d="M70 130 Q72 155 73 180"/>
+                <path d="M75 130 Q78 155 78 175"/>
+            </g>
+            
+            <!-- Wet paint on bristles - red blob -->
+            <ellipse cx="55" cy="140" rx="12" ry="8" fill="#E74C3C" opacity="0.9">
+                <animate attributeName="ry" values="8;9;8" dur="2s" repeatCount="indefinite"/>
+            </ellipse>
+            
+            <!-- Wet paint - blue blob -->
+            <ellipse cx="70" cy="150" rx="10" ry="6" fill="#3498DB" opacity="0.8">
+                <animate attributeName="ry" values="6;7;6" dur="2.3s" repeatCount="indefinite"/>
+            </ellipse>
+            
+            <!-- Wet paint - yellow blob -->
+            <ellipse cx="62" cy="165" rx="8" ry="5" fill="#F1C40F" opacity="0.85">
+                <animate attributeName="ry" values="5;6;5" dur="1.8s" repeatCount="indefinite"/>
+            </ellipse>
+            
+            <!-- Paint drip -->
+            <path d="M70 152 Q72 165 71 175" stroke="#3498DB" stroke-width="3" fill="none" opacity="0.6" stroke-linecap="round"/>
+            <circle cx="71" cy="177" r="3" fill="#3498DB" opacity="0.6"/>
+            
+            <!-- Highlight on bristles -->
+            <path d="M48 135 Q50 160 55 175" stroke="#FFF" stroke-width="2" fill="none" opacity="0.3" stroke-linecap="round"/>
+        </svg>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
