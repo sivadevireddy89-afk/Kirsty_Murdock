@@ -30,35 +30,35 @@ const galleryData = [
     },
     {
         id: 5,
-        title: "Historic Town Square",
+        title: "Human Emotions expressed in different colors",
         category: "Portrait",
         description: "Charming European town square with centuries of history.",
         image: "https://raw.githubusercontent.com/sivadevireddy89-afk/Kirsty_Murdock/main/Images/637720430_18562891804015683_5133635540386644117_n.jpg"
     },
     {
         id: 6,
-        title: "Young Artist",
+        title: "Majestic African Elephant",
         category: "Animals",
-        description: "Capturing the creative spirit and dreams of sky.",
+        description: "Capturing the creative spirit of the african elephant.",
         image: "https://raw.githubusercontent.com/sivadevireddy89-afk/Kirsty_Murdock/main/Images/627483750_18333481078246897_4892216339291354652_n.jpg"
     },
     {
         id: 7,
-        title: "Forest Path",
+        title: "Kangaroo",
         category: "Animals",
-        description: "A mystical journey through an ancient woodland.",
+        description: "Synonym of Australia.",
         image: "https://raw.githubusercontent.com/sivadevireddy89-afk/Kirsty_Murdock/main/Images/619502976_18053353925404643_333480150172694896_n.jpg"
     },
     {
         id: 8,
-        title: "Venice Canals",
+        title: "Sandhill Crane",
         category: "Birds",
         description: "Romantic waterways of the floating city.",
         image: "https://raw.githubusercontent.com/sivadevireddy89-afk/Kirsty_Murdock/main/Images/WhatsApp%20Image%202026-03-27%20at%2020.32.44%20(1).jpeg"
     },
     {
         id: 9,
-        title: "Coastal Sunset",
+        title: "Human Face - Vibrant Colors",
         category: "Animals",
         description: "Vibrant colors of the setting sun over ocean waves.",
         image: "https://raw.githubusercontent.com/sivadevireddy89-afk/Kirsty_Murdock/main/Images/618760515_18037395662529457_1507548237984560749_n.jpg"
