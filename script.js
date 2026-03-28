@@ -58,28 +58,28 @@ const galleryData = [
     },
     {
         id: 9,
-        title: "Human Face - Vibrant Colors",
+        title: "Friendly Cat,
         category: "Animals",
         description: "Vibrant colors of the setting sun over ocean waves.",
         image: "https://raw.githubusercontent.com/sivadevireddy89-afk/Kirsty_Murdock/main/Images/618760515_18037395662529457_1507548237984560749_n.jpg"
     },
     {
         id: 10,
-        title: "Desert Landscape",
+        title: "Human Face - Vibrant Colors",
         category: "Portrait",
         description: "The stark beauty of endless sand dunes.",
         image: "https://raw.githubusercontent.com/sivadevireddy89-afk/Kirsty_Murdock/main/Images/632469366_18562891948015683_944061363553294226_n.jpg"
     },
     {
         id: 11,
-        title: "Paris Street Cafe",
+        title: "Joyous Elephant with a baloon",
         category: "Animals",
         description: "The quintessential Parisian dining experience.",
         image: "https://raw.githubusercontent.com/sivadevireddy89-afk/Kirsty_Murdock/main/Images/653348338_18120566494717406_4188547184959281287_n.jpg"
     },
     {
         id: 12,
-        title: "Musician at Work",
+        title: "Big Bear",
         category: "Animals",
         description: "The passion and concentration of a musical artist.",
         image: "https://raw.githubusercontent.com/sivadevireddy89-afk/Kirsty_Murdock/main/Images/655134662_18520640854078058_429642468194625978_n.jpg"
