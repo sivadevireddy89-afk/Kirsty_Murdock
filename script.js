@@ -54,7 +54,7 @@ const galleryData = [
         title: "Venice Canals",
         category: "location",
         description: "Romantic waterways of the floating city.",
-        image: "https://raw.githubusercontent.com/sivadevireddy89-afk/Kirsty_Murdock/main/Images/618710862_18040161248722174_6298712865049416240_n.jpg"
+        image: "https://raw.githubusercontent.com/sivadevireddy89-afk/Kirsty_Murdock/main/Images/WhatsApp%20Image%202026-03-27%20at%2020.32.44%20(1).jpeg"
     },
     {
         id: 9,
