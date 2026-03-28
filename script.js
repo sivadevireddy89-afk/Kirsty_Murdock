@@ -47,14 +47,14 @@ const galleryData = [
         title: "Forest Path",
         category: "scenery",
         description: "A mystical journey through an ancient woodland.",
-        image: "https://raw.githubusercontent.com/sivadevireddy89-afk/rightdistractions.github.io/main/Images/WhatsApp%20Image%202026-03-24%20at%2011.22.43%20(5).jpeg"
+        image: "https://raw.githubusercontent.com/sivadevireddy89-afk/Kirsty_Murdock/main/Images/619502976_18053353925404643_333480150172694896_n.jpg"
     },
     {
         id: 8,
         title: "Venice Canals",
         category: "location",
         description: "Romantic waterways of the floating city.",
-        image: "https://raw.githubusercontent.com/sivadevireddy89-afk/rightdistractions.github.io/main/Images/WhatsApp%20Image%202026-03-24%20at%2011.22.44%20(1).jpeg"
+        image: "https://raw.githubusercontent.com/sivadevireddy89-afk/Kirsty_Murdock/main/Images/618710862_18040161248722174_6298712865049416240_n.jpg"
     },
     {
         id: 9,
