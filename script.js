@@ -58,7 +58,7 @@ const galleryData = [
     },
     {
         id: 9,
-        title: "Friendly Cat,
+        title: "Friendly Cat",
         category: "Animals",
         description: "Vibrant colors of the setting sun over ocean waves.",
         image: "https://raw.githubusercontent.com/sivadevireddy89-afk/Kirsty_Murdock/main/Images/618760515_18037395662529457_1507548237984560749_n.jpg"
