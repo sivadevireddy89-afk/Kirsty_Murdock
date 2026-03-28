@@ -5,7 +5,7 @@ const galleryData = [
         title: "Ride into Sunset",
         category: "scenery",
         description: "A breathtaking view of sea in golden evening light.",
-        image: "https://raw.githubusercontent.com/sivadevireddy89-afk/Kirsty_Murdock/Images/240946140_646628262971697_4122034282149787550_n.jpeg"
+        image: "https://raw.githubusercontent.com/sivadevireddy89-afk/Kirsty_Murdock/main/Images/240946140_646628262971697_4122034282149787550_n.jpeg"
     },
     {
         id: 2,
