@@ -45,7 +45,7 @@ const galleryData = [
     {
         id: 7,
         title: "Forest Path",
-        category: "scenery",
+        category: "Animals",
         description: "A mystical journey through an ancient woodland.",
         image: "https://raw.githubusercontent.com/sivadevireddy89-afk/Kirsty_Murdock/main/Images/619502976_18053353925404643_333480150172694896_n.jpg"
     },
@@ -59,7 +59,7 @@ const galleryData = [
     {
         id: 9,
         title: "Coastal Sunset",
-        category: "portrait",
+        category: "Animals",
         description: "Vibrant colors of the setting sun over ocean waves.",
         image: "https://raw.githubusercontent.com/sivadevireddy89-afk/Kirsty_Murdock/main/Images/618760515_18037395662529457_1507548237984560749_n.jpg"
     },
@@ -73,14 +73,14 @@ const galleryData = [
     {
         id: 11,
         title: "Paris Street Cafe",
-        category: "location",
+        category: "Animals",
         description: "The quintessential Parisian dining experience.",
         image: "https://raw.githubusercontent.com/sivadevireddy89-afk/Kirsty_Murdock/main/Images/653348338_18120566494717406_4188547184959281287_n.jpg"
     },
     {
         id: 12,
         title: "Musician at Work",
-        category: "portrait",
+        category: "Animals",
         description: "The passion and concentration of a musical artist.",
         image: "https://raw.githubusercontent.com/sivadevireddy89-afk/Kirsty_Murdock/main/Images/655134662_18520640854078058_429642468194625978_n.jpg"
     }
