@@ -61,28 +61,28 @@ const galleryData = [
         title: "Coastal Sunset",
         category: "portrait",
         description: "Vibrant colors of the setting sun over ocean waves.",
-        image: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=800&h=600&fit=crop"
+        image: "https://raw.githubusercontent.com/sivadevireddy89-afk/Kirsty_Murdock/main/Images/618760515_18037395662529457_1507548237984560749_n.jpg"
     },
     {
         id: 10,
         title: "Desert Landscape",
         category: "scenery",
         description: "The stark beauty of endless sand dunes.",
-        image: "https://images.unsplash.com/photo-1509316785289-025f5b846b35?w=800&h=600&fit=crop"
+        image: "https://raw.githubusercontent.com/sivadevireddy89-afk/Kirsty_Murdock/main/Images/632469366_18562891948015683_944061363553294226_n.jpg"
     },
     {
         id: 11,
         title: "Paris Street Cafe",
         category: "location",
         description: "The quintessential Parisian dining experience.",
-        image: "https://images.unsplash.com/photo-1511739001486-6bfe10ce785f?w=800&h=600&fit=crop"
+        image: "https://raw.githubusercontent.com/sivadevireddy89-afk/Kirsty_Murdock/main/Images/653348338_18120566494717406_4188547184959281287_n.jpg"
     },
     {
         id: 12,
         title: "Musician at Work",
         category: "portrait",
         description: "The passion and concentration of a musical artist.",
-        image: "https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=800&h=600&fit=crop"
+        image: "https://raw.githubusercontent.com/sivadevireddy89-afk/Kirsty_Murdock/main/Images/655134662_18520640854078058_429642468194625978_n.jpg"
     }
 ];
 
