@@ -410,19 +410,32 @@ function setupAnimatedSlider() {
         if (dots[index]) dots[index].classList.add('active');
         currentSlide = index;
         
-        // Reset and start progress
-        if (progressFill) {
-            progressFill.style.transition = 'none';
-            progressFill.style.width = '0%';
-            setTimeout(() => {
-                progressFill.style.transition = `width ${autoplayDelay}ms linear`;
-                progressFill.style.width = '100%';
-            }, 50);
+        // Check if we're on the Instagram reel slide (slide 6, index 6)
+        const isReelSlide = slides[index].classList.contains('instagram-reel-slide');
+        if (isReelSlide) {
+            console.log('Instagram reel slide active - stopping autoplay');
+            stopAutoplay();
+        } else {
+            // Reset and start progress for normal slides
+            if (progressFill) {
+                progressFill.style.transition = 'none';
+                progressFill.style.width = '0%';
+                setTimeout(() => {
+                    progressFill.style.transition = `width ${autoplayDelay}ms linear`;
+                    progressFill.style.width = '100%';
+                }, 50);
+            }
         }
     }
     
     function nextSlide() {
         const next = (currentSlide + 1) % slides.length;
+        // Don't auto-advance from reel slide - user must manually navigate
+        if (slides[currentSlide].classList.contains('instagram-reel-slide')) {
+            console.log('Preventing auto-advance from reel slide');
+            stopAutoplay();
+            return;
+        }
         goToSlide(next);
     }
     
@@ -488,6 +501,21 @@ function setupAnimatedSlider() {
     if (slider) {
         slider.addEventListener('mouseenter', stopAutoplay);
         slider.addEventListener('mouseleave', startAutoplay);
+    }
+    
+    // Detect clicks/taps on Instagram reel slide to pause autoplay
+    const reelSlide = document.querySelector('.instagram-reel-slide');
+    if (reelSlide) {
+        reelSlide.addEventListener('click', () => {
+            console.log('Reel slide clicked - stopping autoplay');
+            stopAutoplay();
+        });
+        
+        // Also detect touch events for mobile
+        reelSlide.addEventListener('touchstart', () => {
+            console.log('Reel slide touched - stopping autoplay');
+            stopAutoplay();
+        }, { passive: true });
     }
     
     // Keyboard navigation
