@@ -954,14 +954,10 @@ h3 {
 
 /* Apple-style Footer */
 .footer {
-    background: var(--bg-primary);
-    color: var(--text-secondary);
+    background: var(--secondary-color);
+    color: var(--bg-primary);
+    padding: 40px 0;
     text-align: center;
-    padding: 48px 0;
-    border-top: 1px solid var(--border-color);
-    background-image: 
-        radial-gradient(circle at 50% 100%, rgba(119, 198, 255, 0.02) 0%, transparent 50%),
-        linear-gradient(180deg, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0) 100%);
 }
 
 .footer p {
@@ -2111,5 +2107,327 @@ a, button, .gallery-item, .filter-btn, .cta-button {
 @media (max-width: 768px) {
     .contact-sidebar {
         display: none;
+    }
+}
+
+/* Equipment Page Styles */
+.equipment-hero {
+    padding: 140px 0 80px;
+    background: var(--bg-secondary);
+    background-image:
+        radial-gradient(circle at 20% 80%, rgba(212, 175, 55, 0.1) 0%, transparent 50%),
+        radial-gradient(circle at 80% 20%, rgba(255, 215, 0, 0.08) 0%, transparent 50%);
+}
+
+.equipment-hero-content {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.equipment-hero-title {
+    font-size: 48px;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: 16px;
+    letter-spacing: -0.03em;
+}
+
+.equipment-hero-subtitle {
+    font-size: 21px;
+    color: var(--text-secondary);
+    line-height: 1.5;
+}
+
+.equipment-section {
+    padding: 80px 0;
+}
+
+.equipment-section.additional-tools {
+    background: var(--bg-tertiary);
+}
+
+.equipment-section .section-title {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 48px;
+}
+
+.equipment-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 32px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.equipment-card {
+    background: var(--bg-primary);
+    border-radius: var(--radius-large);
+    overflow: hidden;
+    box-shadow: var(--shadow-light);
+    transition: all var(--transition-smooth);
+    border: 1px solid var(--border-color);
+}
+
+.equipment-card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-heavy);
+    border-color: #D4AF37;
+}
+
+.equipment-card.compact {
+    display: flex;
+    flex-direction: row;
+    max-width: 100%;
+}
+
+.equipment-card.compact .equipment-image {
+    width: 150px;
+    min-width: 150px;
+    height: 150px;
+}
+
+.equipment-card.compact .equipment-info {
+    padding: 16px;
+    flex: 1;
+}
+
+.equipment-card.compact .equipment-name {
+    font-size: 16px;
+    margin-bottom: 4px;
+}
+
+.equipment-card.compact .equipment-description {
+    font-size: 13px;
+    margin-bottom: 8px;
+}
+
+.equipment-image {
+    width: 100%;
+    height: 220px;
+    overflow: hidden;
+    position: relative;
+}
+
+.equipment-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.equipment-card:hover .equipment-image img {
+    transform: scale(1.05);
+}
+
+.equipment-info {
+    padding: 24px;
+}
+
+.equipment-category {
+    display: inline-block;
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--accent-color);
+    background: rgba(0, 113, 227, 0.08);
+    padding: 4px 10px;
+    border-radius: 12px;
+    margin-bottom: 12px;
+}
+
+.equipment-name {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 8px;
+    line-height: 1.3;
+}
+
+.equipment-description {
+    font-size: 14px;
+    line-height: 1.5;
+    color: var(--text-secondary);
+    margin-bottom: 16px;
+}
+
+.equipment-price {
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 16px;
+}
+
+.equipment-buy-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: var(--accent-color);
+    color: white;
+    text-decoration: none;
+    padding: 12px 24px;
+    border-radius: var(--radius-medium);
+    font-size: 14px;
+    font-weight: 500;
+    transition: all var(--transition-fast);
+    font-family: inherit;
+    border: none;
+    cursor: pointer;
+}
+
+.equipment-buy-btn:hover {
+    background: #0077ed;
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-medium);
+}
+
+.equipment-buy-btn.small {
+    padding: 8px 16px;
+    font-size: 13px;
+}
+
+.equipment-note {
+    padding: 80px 0;
+    background: var(--bg-secondary);
+}
+
+.note-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 0 22px;
+}
+
+.note-icon {
+    font-size: 48px;
+    margin-bottom: 24px;
+}
+
+.note-content h3 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 16px;
+    color: var(--text-primary);
+}
+
+.note-content p {
+    font-size: 17px;
+    line-height: 1.6;
+    color: var(--text-secondary);
+}
+
+.nav-brand a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.footer .affiliate-note {
+    font-size: 12px;
+    color: var(--text-secondary);
+    margin-top: 8px;
+}
+
+/* Back to Top Button */
+.back-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 48px;
+    height: 48px;
+    background: var(--bg-primary);
+    border: 1px solid var(--border-color);
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(20px);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: var(--shadow-heavy);
+    z-index: 9999;
+}
+
+.back-to-top.visible {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.back-to-top:hover {
+    background: var(--accent-color);
+    border-color: var(--accent-color);
+}
+
+.back-to-top:hover svg {
+    stroke: white;
+}
+
+.back-to-top svg {
+    width: 20px;
+    height: 20px;
+    stroke: var(--text-primary);
+}
+
+/* Language Switcher */
+.language-switcher {
+    margin-left: 20px;
+}
+
+.language-switcher select {
+    padding: 8px 12px;
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-medium);
+    background: var(--bg-primary);
+    font-family: inherit;
+    font-size: 14px;
+    color: var(--text-primary);
+    cursor: pointer;
+    transition: all var(--transition-fast);
+}
+
+.language-switcher select:hover {
+    border-color: var(--accent-color);
+}
+
+/* Responsive Equipment Page */
+@media (max-width: 768px) {
+    .equipment-hero {
+        padding: 120px 0 60px;
+    }
+
+    .equipment-hero-title {
+        font-size: 32px;
+    }
+
+    .equipment-hero-subtitle {
+        font-size: 17px;
+    }
+
+    .equipment-grid {
+        grid-template-columns: 1fr;
+        gap: 24px;
+        padding: 0 16px;
+    }
+
+    .equipment-card.compact {
+        flex-direction: column;
+    }
+
+    .equipment-card.compact .equipment-image {
+        width: 100%;
+        height: 180px;
+    }
+
+    .equipment-name {
+        font-size: 18px;
+    }
+
+    .equipment-price {
+        font-size: 20px;
     }
 }
