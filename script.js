@@ -242,10 +242,25 @@ function setupEventListeners() {
         }
     });
     
-    // Mobile menu toggle
+    // Mobile menu toggle with sidebar overlay
+    const navOverlay = document.querySelector('.nav-overlay');
+    
     hamburger.addEventListener('click', () => {
+        hamburger.classList.toggle('active');
         navMenu.classList.toggle('active');
+        if (navOverlay) navOverlay.classList.toggle('active');
+        document.body.style.overflow = navMenu.classList.contains('active') ? 'hidden' : '';
     });
+    
+    // Close sidebar when clicking overlay
+    if (navOverlay) {
+        navOverlay.addEventListener('click', () => {
+            hamburger.classList.remove('active');
+            navMenu.classList.remove('active');
+            navOverlay.classList.remove('active');
+            document.body.style.overflow = '';
+        });
+    }
     
     // Smooth scrolling for navigation links
     navLinks.forEach(link => {
@@ -262,8 +277,11 @@ function setupEventListeners() {
                 });
             }
             
-            // Close mobile menu
+            // Close mobile sidebar and overlay
             navMenu.classList.remove('active');
+            hamburger.classList.remove('active');
+            if (navOverlay) navOverlay.classList.remove('active');
+            document.body.style.overflow = '';
         });
     });
     
@@ -645,10 +663,34 @@ function setupNavHighlighting() {
     });
 }
 
+// ===== Back to Top Button =====
+function initBackToTop() {
+    const backToTopBtn = document.getElementById('backToTop');
+    if (!backToTopBtn) return;
+    
+    // Show/hide button based on scroll position
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 500) {
+            backToTopBtn.classList.add('visible');
+        } else {
+            backToTopBtn.classList.remove('visible');
+        }
+    });
+    
+    // Smooth scroll to top when clicked
+    backToTopBtn.addEventListener('click', () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    });
+}
+
 // Initialize everything when DOM is loaded
 document.addEventListener('DOMContentLoaded', () => {
     initGallery();
     setupIntersectionObserver();
+    initBackToTop();
     setRandomHeroBackground();
     // setupScrollingBrush();
     setupAnimatedSlider();
